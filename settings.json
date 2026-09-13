@@ -192,4 +192,20 @@
     "light": "One Light",
     "dark": "Gruber Darker",
   },
+  // markdownlint 规则（由 markdownlint 扩展提供）。这里写的是 markdownlint 的
+  // config 对象：扩展会把这段原样塞进 LSP 的 initializationOptions.config。
+  // 规则文档：https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+  "lsp": {
+    "markdownlint": {
+      "settings": {
+        "default": true,
+        "MD013": false,
+        "MD024": { "siblings_only": true },
+        "MD033": false,
+        "MD034": false,
+        "MD036": false,
+        "MD041": false
+      }
+    }
+  },
 }
